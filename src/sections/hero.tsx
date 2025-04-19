@@ -1,4 +1,5 @@
 import { Button } from '../components/button';
+import { HeroExperience } from '../components/hero-models/hero-experience';
 import { words } from '../constants';
 
 export const Hero = () => {
@@ -8,6 +9,7 @@ export const Hero = () => {
                 <img src="./images/bg.png" alt="background" />
             </div>
             <div className="hero-layout">
+                {/* Left side */}
                 <header className="flex w-screen flex-col justify-center px-5 md:w-full md:px-20">
                     <div className="flex flex-col gap-7">
                         <div className="hero-text">
@@ -46,6 +48,13 @@ export const Hero = () => {
                         />
                     </div>
                 </header>
+
+                {/* right side */}
+                <figure>
+                    <div className="hero-3d-layout">
+                        <HeroExperience />
+                    </div>
+                </figure>
             </div>
         </section>
     );
